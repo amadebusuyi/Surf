@@ -1,0 +1,449 @@
+html, body{
+	font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color:#f3f3f4;
+	color: #676a6c;
+	height: 100%;
+}
+#side_menu{
+	background-color: #2f4050;
+	padding:0px;
+	width: 250px !important;
+}
+#side_menu h1{
+	color: #1f3647;
+	text-align: center;
+	margin: 10px 0px;
+	font-size: 25px;
+}
+#side_menu ul{
+	list-style: none;
+	margin: 10px;
+	padding: 2px;
+}
+#side_menu a{
+	text-decoration: none;
+	color: #fff;
+	padding: 12px;
+	font-weight: bold;
+	font-size: 14px;
+	display: block;
+}
+#side_menu a:hover{
+	background-color: #293849;
+	font-size: 15px;
+	color: orange;
+}
+#side_menu .active a{
+	color: #293849;
+	background-color: orange;
+}
+#side_menu .settings_button{
+	background-color: #1ab394;
+}
+#side_menu .settings_button a{
+	color: #293;
+}
+#side_menu .settings_button a:hover{
+	color: #fff;
+	background-color: #1ab394;
+}
+#side_menu .glyphicon{
+	margin-right: 6px;
+}
+.box{
+	border: 1px dotted red;
+}
+.display-table{
+	display: table;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+}
+.navbar-default{
+	background-color: #fff;
+}
+.navbar-default .navbar-toggle{
+	border-color: #293849;
+	background-color: #e7eaec;
+}
+.navbar-default .navbar-toggle:hover{
+	border-color: #e7eaec;
+	background-color: orange;
+}
+.navbar-default .navbar-toggle:focus{
+	background-color: purple;
+}
+.navbar-default .icon-bar{
+	border: 1px solid #fff;
+}
+#navhead{
+	background-color: #fff;
+	border-bottom: 1px solid #e7eaec;
+}
+#navhead ul{
+	margin: 0px;
+	padding:0px;
+	list-style: none;
+	color: #676a6c;
+}
+#navhead ul li{
+	float: left;
+	margin-left: 15px;
+	padding: 17px 0px;
+}
+#navhead ul .glyphicon{
+	color: #676a6c;
+}
+.label-message{
+	background-color: #1ab394;
+}
+#navhead ul a{
+	text-decoration: none;
+}
+#navhead #search_space{
+	padding: 17px;
+	vertical-align: center;
+	border:none;
+	width: 300px;
+	outline: none;
+}
+#navhead .logout{
+	color: #676a6c;
+}
+#navhead #welmessage{
+	margin-right: 20px;
+}
+#navhead ul .label{
+	position: absolute;
+	margin-top: -10px;
+	margin-left:-5px;
+}
+#navhead .fixed_width{
+	width: 35px;
+}
+.display-table-row{
+	display: table-row;
+	height: 100%;
+}
+.display-table-cell{
+	display: table-cell;
+	float: none;
+	height: 100%;
+}
+.valign-top{
+	vertical-align: top;
+}
+#thefoot{
+	position: absolute;
+	bottom: -50px;
+	width: 100%;
+	background-color: #fff;
+	padding: 10px;
+	margin-left: -15px;
+	text-align: center;
+	color: #676a6c;
+}
+
+.container-fluid{
+	padding: 0px !important;
+}
+
+.blink{
+    animation:blinkingText 1s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: red;    }
+    50%{    color: transparent; }
+    70%{   color: red;    }
+    100%{   color: red;    }
+}
+
+.panel-margin{
+	margin: 2.5%;
+}
+
+.alert-default{
+	border: 1px solid #aaa;
+	background: whitesmoke;
+	color: #333;
+}
+
+.alert-default-info{
+	border: 1px solid #eee;
+	background: #fefefe;
+	font-size: 16px;
+	color: #444;
+}
+
+.alert-instruction{
+	border: 1px solid #b5b119;
+	background: #f4efcf;
+}
+
+@media (min-width: 1100px){
+	.panel-margin{
+		width: 80%;
+		margin: 2.5% 10% 2.5% 10%;
+
+	}
+}
+
+figure {
+	display: inline-block !important;
+	height: auto !important;
+	width: auto !important;
+	margin-left: 15px !important;
+}
+
+figure > img{
+	height: 100% !important;
+	width: 100% !important;
+}
+
+#countdown{
+	font-size: 14px;
+	margin-top: 2px;
+	font-weight: bold;
+}
+
+#countend{
+	display: none;
+	font-size: 14px;
+	margin-top: 2px;
+	font-weight: bold;
+}
+
+.loading-div{
+	padding-top: 180px;
+	margin-left: 35%;
+	margin-bottom: 30px;
+	height: 410px;
+}
+
+.loading{
+	display: inline-block;
+	margin-left: 30px;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+    animation: loading 1s infinite linear;
+    -webkit-animation: loading hue 1s infinite linear;
+}
+
+.loading1{
+	margin: 5px;
+	margin-bottom: 0;
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+    animation: loading 1s infinite linear;
+    -webkit-animation: loading hue 1s infinite linear;
+}
+
+.loading2{
+	animation: refresh 1s infinite linear;
+    -webkit-animation: refresh hue 1s infinite linear;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes loading {
+	0% 	 {color: #fff; background-color: #f44336;}
+    10%  {color: #fff; background-color: #f0ad4e; border-color: #eea236;}
+	20%	 {color: #fff; background-color: #5cb85c; border-color: #4cae4c;}
+	30%	 {color: #fff; background-color: #337ab7; border-color: #2e6da4;}
+    40%	 {color: #000; background-color: #5bc0de; border-color: #46b8da;}
+ 	50%  {color: #333; background-color: #ffffff; border-color: #cccccc;} 
+ 	60%  {color: #333; background-color: #ffffff; border-color: #cccccc;}
+    70%	 {color: #000; background-color: #5bc0de; border-color: #46b8da;}
+	80%	 {color: #fff; background-color: #337ab7; border-color: #2e6da4;}
+	90%	 {color: #fff; background-color: #5cb85c; border-color: #4cae4c;} 
+    100% {color: #fff; background-color: #f0ad4e; border-color: #eea236;}
+}
+
+/* Standard syntax */
+@keyframes loading {
+	0% 	 {color: #fff; background-color: #f44336;}
+    10%  {color: #fff; background-color: #f0ad4e; border-color: #eea236;}
+	20%	 {color: #fff; background-color: #5cb85c; border-color: #4cae4c;}
+	30%	 {color: #fff; background-color: #337ab7; border-color: #2e6da4;}
+    40%	 {color: #000; background-color: #5bc0de; border-color: #46b8da;}
+ 	50%  {color: #333; background-color: #ffffff; border-color: #cccccc;} 
+ 	60%  {color: #333; background-color: #ffffff; border-color: #cccccc;}
+    70%	 {color: #000; background-color: #5bc0de; border-color: #46b8da;}
+	80%	 {color: #fff; background-color: #337ab7; border-color: #2e6da4;}
+	90%	 {color: #fff; background-color: #5cb85c; border-color: #4cae4c;} 
+    100% {color: #fff; background-color: #f0ad4e; border-color: #eea236;}
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes refresh {
+	0% 	 {color: #f44336;}
+	20%	 {color: #5cb85c;}
+    40%	 {color: #5bc0de;} 
+ 	60%  {color: #ffffff;}
+	80%	 {color: #337ab7;} 
+    100% {color: #f0ad4e;}
+}
+
+/* Standard syntax */
+@keyframes refresh {
+	0% 	 {color: #f44336;}
+	20%	 {color: #5cb85c;}
+    40%	 {color: #5bc0de;} 
+ 	60%  {color: #ffffff;}
+	80%	 {color: #337ab7;} 
+    100% {color: #f0ad4e;}
+}
+
+@media screen and (max-width: 550px){
+	.col-xxs{
+		width: 100% !important;
+		margin-left: 0;
+		margin-right: 10%;
+	}
+
+	.col-xxs-12{
+		width: 100% !important;
+	}
+
+	.col-xxs-9{
+		width: 75% !important;
+	}
+
+	.col-xxs-6{
+		width: 50% !important;
+	}
+
+	.col-xxs-3{
+		width: 25% !important;
+	}
+}
+
+.huge{
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.panel-green {
+  border-color: #5cb85c;
+}
+
+.panel-green > .panel-heading {
+  border-color: #5cb85c;
+  color: white;
+  background-color: #5cb85c;
+}
+
+.panel-green > a {
+  color: #5cb85c;
+}
+
+.panel-green > a:hover {
+  color: #3d8b3d;
+}
+
+.panel-red {
+  border-color: #d9534f;
+}
+
+.panel-red > .panel-heading {
+  border-color: #d9534f;
+  color: white;
+  background-color: #d9534f;
+}
+
+.panel-red > a {
+  color: #d9534f;
+}
+
+.panel-red > a:hover {
+  color: #b52b27;
+}
+
+.panel-yellow {
+  border-color: #f0ad4e;
+}
+
+.panel-yellow > .panel-heading {
+  border-color: #f0ad4e;
+  color: white;
+  background-color: #f0ad4e;
+}
+
+.panel-yellow > a {
+  color: #f0ad4e;
+}
+
+.panel-yellow > a:hover {
+  color: #df8a13;
+}
+
+.panel-min-height{
+	min-height: 440px;
+}
+
+.panel-min-height2{
+	min-height: 430px;
+}
+
+.go-top-bg{
+	background: rgba(0,0,0, .6);
+	border-radius: 50px;
+	height: 40px;
+	width: 40px;
+	color: #fff;
+}
+
+.panel-title{
+	text-transform: uppercase;
+	font-weight: 600;
+	font-family: helvetica;
+	color: #333 !important;
+}
+
+.col-panel-spacing{
+	padding: 15px;
+}
+
+.panel-header-height{
+	height: 40px !important;
+}
+
+.panel-header-height h4{
+	margin-top: -2px !important;
+}
+
+.p-course-name{
+	font-size: 14px;
+}
+
+.panel-course-body{
+	height: 120px !important;
+}
+
+.panel-body-text{
+	margin-top: 20px;
+	text-align: center;
+}
+
+.live-blink{
+	animation: lblink 3s infinite linear;
+    -webkit-animation: lblink hue 3s infinite linear;
+}
+
+@-webkit-keyframes lblink {
+	0% 	 {color: blue;} 
+ 	50%  {color: lightblue;}
+    100% {color: blue;}
+}
+
+/* Standard syntax */
+@keyframes lblink {
+	0% 	 {color: blue;} 
+ 	50%  {color: lightblue;}
+    100% {color: blue;}
+}
+
+.bold-text{
+	font-weight: bold;
+	border: none;
+}
